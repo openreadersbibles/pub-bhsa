@@ -13,8 +13,8 @@ jobs:
         with:
           root_file: |
             bhsa_OT_JON.tex
-          working_directory: /home/runner/work/pub-bhsa
           latexmk_use_xelatex: true
+          continue_on_error: true
           extra_fonts: |
             ./*.ttf
       - name: Upload PDF file to gh-pages
