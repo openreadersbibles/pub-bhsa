@@ -16,7 +16,7 @@ jobs:
           latexmk_use_xelatex: true
           continue_on_error: true
           extra_fonts: |
-            ./*.ttf
+            ./fonts/*.ttf
       - name: Upload PDF file to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
