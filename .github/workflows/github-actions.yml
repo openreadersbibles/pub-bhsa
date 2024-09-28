@@ -1,0 +1,26 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            
+          latexmk_use_xelatex: true
+          extra_fonts: |
+            ./fonts/*.ttf
+      - name: Upload PDF file to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          destination_dir: 
+          keep_files: true
