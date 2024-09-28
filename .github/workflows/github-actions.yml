@@ -15,12 +15,12 @@ jobs:
             bhsa_OT_JON.tex
           latexmk_use_xelatex: true
           extra_fonts: |
-            ./fonts/*.ttf
+            ./*.ttf
       - name: Upload PDF file to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          destination_dir: 
+          destination_dir: ''
           keep_files: true
