@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.1)  28 SEP 2024 15:55
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.1)  28 SEP 2024 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -493,8 +493,38 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
 (Font)              size <17.28> substituted on input line 15.
 
 
+Overfull \hbox (4.82031pt too wide) detected at line 15
+[][]\TU/Arvo(0)/m/n/12 10  
+ []
+
+
+Overfull \hbox (2.05469pt too wide) detected at line 15
+[][]\TU/Arvo(0)/m/n/12 11  
+ []
+
+
+Overfull \hbox (3.47266pt too wide) detected at line 15
+[][]\TU/Arvo(0)/m/n/12 12  
+ []
+
+
+Overfull \hbox (3.53125pt too wide) detected at line 15
+[][]\TU/Arvo(0)/m/n/12 13  
+ []
+
+
 Overfull \hbox (4.35742pt too wide) detected at line 15
 [][]\TU/Arvo(0)/m/n/12 14  
+ []
+
+
+Overfull \hbox (3.70117pt too wide) detected at line 15
+[][]\TU/Arvo(0)/m/n/12 15  
+ []
+
+
+Overfull \hbox (4.3457pt too wide) detected at line 15
+[][]\TU/Arvo(0)/m/n/12 16  
  []
 
 
@@ -502,10 +532,37 @@ Overfull \hbox (4.35742pt too wide) detected at line 15
 [1
 
 ]
+Overfull \hbox (4.82031pt too wide) detected at line 17
+[][]\TU/Arvo(0)/m/n/12 10  
+ []
+
+
+Overfull \hbox (2.05469pt too wide) detected at line 17
+[][]\TU/Arvo(0)/m/n/12 11  
+ []
+
+
+Overfull \hbox (4.82031pt too wide) detected at line 19
+[][]\TU/Arvo(0)/m/n/12 10  
+ []
+
+
 
 [2]
+Overfull \hbox (4.82031pt too wide) detected at line 21
+[][]\TU/Arvo(0)/m/n/12 10  
+ []
 
-[3] (./bhsa_OT_JON.aux)
+
+Overfull \hbox (2.05469pt too wide) detected at line 21
+[][]\TU/Arvo(0)/m/n/12 11  
+ []
+
+
+
+[3]
+
+[4] (./bhsa_OT_JON.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -522,10 +579,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  7580 strings out of 474235
  188301 string characters out of 5744034
- 1944609 words of memory out of 5000000
+ 1958609 words of memory out of 5000000
  30152 multiletter control sequences out of 15000+600000
  562883 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,11n,121p,5373b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,11n,121p,11236b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bhsa_OT_JON.xdv (3 pages, 70744 bytes).
+Output written on bhsa_OT_JON.xdv (4 pages, 108504 bytes).

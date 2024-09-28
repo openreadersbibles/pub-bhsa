@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1727538930.49451 "bhsa_OT_JON.xdv" "bhsa_OT_JON.pdf" "bhsa_OT_JON" 1727538930.74349 0
-  "bhsa_OT_JON.xdv" 1727538930.44374 70744 eab530171cdea3852d3d95119fdc6049 "xelatex"
+["xdvipdfmx"] 1727548295.98351 "bhsa_OT_JON.xdv" "bhsa_OT_JON.pdf" "bhsa_OT_JON" 1727548296.24703 0
+  "bhsa_OT_JON.xdv" 1727548295.93005 108504 26bbe1f694b83ec4d14fec3068fa6868 "xelatex"
   (generated)
   "bhsa_OT_JON.pdf"
   (rewritten before read)
-["xelatex"] 1727538928.77878 "bhsa_OT_JON.tex" "bhsa_OT_JON.xdv" "bhsa_OT_JON" 1727538930.74226 0
+["xelatex"] 1727548293.09361 "bhsa_OT_JON.tex" "bhsa_OT_JON.xdv" "bhsa_OT_JON" 1727548296.24586 0
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -66,9 +66,9 @@
   "/opt/texlive/texdir/texmf-dist/web2c/texmf.cnf" 1719785820 42007 0b741a3c21a5ca32b40e3846e75b3548 ""
   "/opt/texlive/texdir/texmf-var/web2c/xetex/xelatex.fmt" 1725154160 10869096 4bd8cdba8f6c87547741a4590dda674a ""
   "/opt/texlive/texdir/texmf.cnf" 1725154010 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "bhsa_OT_JON.aux" 1727538930.44174 31830 87517b5733c73561d21b83f28c077bec "xelatex"
-  "bhsa_OT_JON.tex" 1727537710.81476 20542 c59fc86864fff72227a29f50e83ecc3e ""
-  "openreader.cls" 1727537710.82476 5148 f72579cad59732f61eb6d06a478d00c9 ""
+  "bhsa_OT_JON.aux" 1727548295.92705 64008 f3f30f4a271fd159f3f75bdb0ef6c1fe "xelatex"
+  "bhsa_OT_JON.tex" 1727548185.81234 37639 4081ed04b808b649423b78171d08195f ""
+  "openreader.cls" 1727548185.82234 5148 f72579cad59732f61eb6d06a478d00c9 ""
   (generated)
   "bhsa_OT_JON.aux"
   "bhsa_OT_JON.log"
