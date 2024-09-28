@@ -12,7 +12,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            ../bhsa_OT_JON.tex
+            bhsa_OT_JON.tex
+          working_directory: /home/runner/work/pub-bhsa
           latexmk_use_xelatex: true
           extra_fonts: |
             ./*.ttf
