@@ -1,0 +1,63 @@
+name: Build LaTeX document
+
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: write      
+  id-token: write
+  pages: write
+  actions: read
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            bhsa_OT_MAL.tex
+          latexmk_use_xelatex: true
+          continue_on_error: true
+          working_directory: 'default'
+          extra_fonts: |
+            ./fonts/*.ttf
+      - name: Upload PDF file to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: 'default'
+          publish_branch: gh-pages
+          destination_dir: 'default'
+          keep_files: true
+          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**,.github/workflows/**,openreader.cls'
+      - name: Create and index for the page
+        uses: openreadersbibles/create-indices-action@production
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+  deploy:
+    needs: build_latex # Ensure this job runs after build_latex
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5        
+        with:
+          enablement: true
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
