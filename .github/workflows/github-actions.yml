@@ -18,7 +18,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            bhsa_OT_MAL.tex
+            bhsa_OT_GEN.tex
+            bhsa_OT_EXO.tex
+            bhsa_OT_LEV.tex
           latexmk_use_xelatex: true
           continue_on_error: true
           working_directory: 'default'

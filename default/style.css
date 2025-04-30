@@ -19,24 +19,37 @@ html[lang='grc'] {
 .chapter {
     margin-bottom: 1rem;
 }
+
 .chapter-number {
-    font-family: SBL BibLit;
-    font-weight: bold;
-    margin-right: 0.5rem;
-    color: #444;
+	font-family: Charis SIL;
+	font-weight: bold;
+	color: #444;
+  font-size: 3em;
+  line-height: 1;
 }
+
+html[lang='hbo']  > body > div > div > .chapter-number {
+  float: right;
+  margin-left: 0.2em; /* Adjust spacing to the text */
+}
+
+html[lang='grc']  > body > div > div > .chapter-number {
+  float: left;
+  margin-right: 0.2em; /* Adjust spacing to the text */
+}
+
 .verse {
     display: inline;
 }
 .verse-number {
-    font-family: SBL BibLit;
+    font-family: Charis SIL;
     font-size: 1.5rem;
     color: black;
     vertical-align: top;
     margin-left: 0.3rem;
 }
 .annotation-toggle {
-    font-family: SBL BibLit;
+    font-family: Charis SIL;
     cursor: pointer;
     color: gray;
     text-decoration: none;
@@ -47,7 +60,7 @@ html[lang='grc'] {
 }
 
 .annotation {
-    font-family: SBL BibLit;
+    font-family: Charis SIL;
 
     color: black;
     display: block;
@@ -71,14 +84,16 @@ html[lang='grc'] {
 
 div[dir='rtl'] .parsing:not(:last-child), 
 div[dir='rtl'] .lexical-form:not(:last-child), 
-div[dir='rtl'] .gloss:not(:last-child) 
+div[dir='rtl'] .gloss:not(:last-child), 
+div[dir='rtl'] .ketiv-qere:not(:last-child) 
 {
     margin-left: 0.5rem;
 }
 
 div[dir='ltr'] .parsing:not(:last-child), 
 div[dir='ltr'] .lexical-form:not(:last-child), 
-div[dir='ltr'] .gloss:not(:last-child) 
+div[dir='ltr'] .gloss:not(:last-child), 
+div[dir='ltr'] .ketiv-qere:not(:last-child) 
 {
     margin-right: 0.5rem;
 }
@@ -87,8 +102,9 @@ div[dir='ltr'] .gloss:not(:last-child)
     font-style: italic;
 }
 
-.lexical-form {
+.lexical-form, .ketiv-qere {
     font-family: SBL BibLit, Georgia, serif;
+    white-space: nowrap;
 }
 
 .wd {
@@ -105,66 +121,67 @@ h2 {
 }
 
 table.toc {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
-    text-align: left;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toc th, .toc td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.toc th {
+  font-weight: normal;
+}
+
+.toc td {
+  text-align: center;
+}
   
-  .toc th, .toc td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-  }
-  
-  .toc th {
-    font-weight: normal;
-  }
-  
-  .toc td {
-    text-align: center;
-  }
-    
-  .toc tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .toc tr:hover {
-    background-color: #e9e9e9;
-  }
-  
-  .toc a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .toc a:hover {
-    text-decoration: underline;
-  }
-  
-  .toc h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .toc {
-      font-size: 14px;
-    }
-  
-    .toc th, .toc td {
-      padding: 10px;
-    }
+.toc tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.toc tr:hover {
+  background-color: #e9e9e9;
+}
+
+.toc a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.toc h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .toc {
+    font-size: 14px;
   }
 
+  .toc th, .toc td {
+    padding: 10px;
+  }
+}
+
+
 ul.chapters {
-  direction: ltr;
+	direction: ltr;
 }
 
 ul.chapters > li {
@@ -176,3 +193,6 @@ ul.chapters > li > a {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Begin Custom Template */
+
