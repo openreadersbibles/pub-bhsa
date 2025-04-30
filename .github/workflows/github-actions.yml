@@ -18,10 +18,12 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            bhsa_OT_RUT.tex
-            bhsa_OT_1SA.tex
-            bhsa_OT_2SA.tex
-            bhsa_OT_1KI.tex
+            bhsa_OT_2KI.tex
+            bhsa_OT_1CH.tex
+            bhsa_OT_2CH.tex
+            bhsa_OT_EZR.tex
+            bhsa_OT_NEH.tex
+            bhsa_OT_EST.tex
           latexmk_use_xelatex: true
           continue_on_error: true
           working_directory: 'default'
